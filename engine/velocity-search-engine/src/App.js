@@ -4,6 +4,7 @@ import logo from './assets/Logo-highres.png'
 
 function App() {
     const searchEngineId = 'a0f6e0ed814524b01'
+
     useEffect(() => {
         const script = document.createElement('script')
         script.src = `https://cse.google.com/cse.js?cx=${searchEngineId}`
@@ -11,8 +12,9 @@ function App() {
 
         document.body.appendChild(script)
         document.title = "Velocity Search Engine"
+
         script.onload = () => {
-            const iframe = document.querySelector('iframe.gsc-resultsbox-visible');
+            const iframe = document.querySelector('.gsc-results iframe');
             if (iframe) {
                 const style = document.createElement('style');
                 style.textContent = `
@@ -30,7 +32,7 @@ function App() {
     return (
         <div className="App App-header">
             <img src={logo} alt="logo" className="Logo"/>
-            <div class="gcse-search"></div>
+            <div className="gcse-search"></div> {/* Changed class to className */}
         </div>
     );
 };
