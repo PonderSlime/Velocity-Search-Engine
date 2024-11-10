@@ -11,6 +11,16 @@ function App() {
 
         document.body.appendChild(script)
         document.title = "Velocity Search Engine"
+        script.onload = () => {
+            const iframe = document.querySelector('iframe.gsc-resultsbox-visible');
+            if (iframe) {
+                const style = document.createElement('style');
+                style.textContent = `
+                    .gsc-webResult { color: #4feb34 !important; background-color: #4feb34 !important; border-radius: 100px !important;}
+                `;
+                iframe.contentDocument.head.appendChild(style);
+            }
+        }
         
         return () => {
             document.body.removeChild(script)
