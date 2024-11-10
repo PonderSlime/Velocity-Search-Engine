@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Velocity-Search-Engine/static/css/main.60108e83.css",
+    "main.js": "/Velocity-Search-Engine/static/js/main.b53dd227.js",
+    "static/js/453.27726a45.chunk.js": "/Velocity-Search-Engine/static/js/453.27726a45.chunk.js",
+    "static/media/Logo-highres.png": "/Velocity-Search-Engine/static/media/Logo-highres.e4d45eb8d6c35bf4b8da.png",
+    "index.html": "/Velocity-Search-Engine/index.html",
+    "main.60108e83.css.map": "/Velocity-Search-Engine/static/css/main.60108e83.css.map",
+    "main.b53dd227.js.map": "/Velocity-Search-Engine/static/js/main.b53dd227.js.map",
+    "453.27726a45.chunk.js.map": "/Velocity-Search-Engine/static/js/453.27726a45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60108e83.css",
+    "static/js/main.b53dd227.js"
+  ]
+}
